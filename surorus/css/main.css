@@ -24,7 +24,7 @@ body {
  overflow: hidden;
  }
 
-/* MENU */
+/* NAVEGACION */
 .unstyled {
   list-style: none;
   padding: 0;
@@ -85,6 +85,8 @@ body {
 .list-hover-slide a.is-current:before, .list-hover-slide a:hover:before {
   left: 0;
 }
+
+/* SOCIAL */
 
 .socialnet {
   position: fixed;
