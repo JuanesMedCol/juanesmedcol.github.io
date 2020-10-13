@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	overflow-x: hidden;
+  overflow-y:scroll;
+  font-family: 400 "Raleway";
+	}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+
+/* VIDEO FONDO */
+}
+#video_back{
+ position: fixed;
+ bottom: 0px;
+ right: 0px;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ z-index: -1000;
+ overflow: hidden;
+ }
+
+/* MENU */
+.unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.unstyled a {
+  text-decoration: none;
+}
+
+.list-inline {
+  overflow: hidden;
+}
+.list-inline li {
+  float: left;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 17.5em;
+  z-index: 9;
+}
+.main-nav a {
+  padding: 1.1em 0;
+  color: #dfdbd9;
+  font: 900 25px "Raleway";
+  text-align: center;
+}
+.main-nav a:hover {
+  color: #d00070;
+}
+.list-hover-slide li {
+  position: relative;
+  overflow: hidden;
+}
+.list-hover-slide a {
+  display: block;
+  position: relative;
+  z-index: 9;
+  transition: 0.35s ease color;
+}
+.list-hover-slide a:before {
+  content: "";
+  display: block;
+  z-index: -1;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-right: solid 10px #d00070;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 20px;
+  background: #ffffff;
+  transition: 0.35s ease left;
+}
+.list-hover-slide a.is-current:before, .list-hover-slide a:hover:before {
+  left: 0;
+}
+
+.socialnet {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 17.5em;
+  height: 100px;
+  z-index: 9;
+  padding-top: 25px;
+  background-color: #fff;
+  border-top-right-radius: 100px;
+  border-right: solid 10px #d00070;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.socialnet img {
+width: 50px;
+height: 50px;
+filter:grayscale(100%);
+transition: 0.35s;
+}
+
+.socialnet img:hover {
+  filter:grayscale(0%);
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+/* CARTAS */
+section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px; 
+  align-content: center;
+}
+
+.card {
+  position: relative;
+  min-width: 300px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  transition: .5s;
+}
+.card:hover {
+  transform:scale(1.1);
+  background: linear-gradient(-45deg, #d6b23c, #f321d7);
+  transition: .5s;
+  opacity: 1;
+}
+.card_1, .card_1 .title .fa {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+	opacity: 0.75;
+
+}
+.card_2, .card_2 .title .fa  {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+		opacity: 0.75;
+}
+.card_3, .card_3 .title .fa  {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+		opacity: 0.75;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, .1);
+  z-index: 1;
+  transform: skewY(-25deg) scale(1.5);
+}
+
+.title .fa {
+  color: #fff;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+.title h2 {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 0;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+.price {
+  position: relative;
+  z-index: 2;
+}
+.price h4 {
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 60px;
+}
+.option {
+  position: relative;
+  z-index: 2;
+}
+.option ul {
+  margin: 0;
+  padding: 0;
+}
+.option ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+.card a {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  color: #d00070;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-weight: 900;
+  margin: 20px auto 0;
+  line-height: 40px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0,0,0, .1);
+}
+.card a:hover {
+  cursor: pointer;
+  background-color: #d00070;
+  color: #fff;
+  transition: 0.7s;
+}
+
+/* MAPA */
+
+.mapwrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.googlemap {
+  width: 100%;
+  height: 100%;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #fff;
+  color: #d00070;
+  font-weight: 600;
+  font-size: 20px;
+  height: 100px;
+  text-align: center;
+  font-variant: small-caps;
+  border-top-left-radius: 100px;
+  border-left: solid 10px #d00070;
+  vertical-align: center;
+}
